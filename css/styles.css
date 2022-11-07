@@ -911,8 +911,9 @@ body {
 
   transition-property: transform scale;
   transition-duration: var(--time-transition);
-  transition-timing-function: var(--function-transition);
+  transition-timing-function: ease-in-out;
   transition-delay: var(--delay-transition);
+  transition-timing-function: var(--function-transition);
 }
 
 .backdrop.is-hidden .modal {
