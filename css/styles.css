@@ -224,7 +224,6 @@ body {
   transition-property: color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 
 .nav-link::after {
@@ -246,7 +245,6 @@ body {
   transition-property: opacity;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 
 .nav-list .nav-list-item:not(:last-child) {
@@ -299,7 +297,6 @@ body {
   transition-property: color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 
 .header-tel-icon {
@@ -412,7 +409,6 @@ body {
   transition-property: background-color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 
 .hero-button:active {
@@ -650,7 +646,6 @@ body {
   transition-property: background-color color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 
 .team-social-svg {
@@ -717,7 +712,6 @@ body {
   transition-property: color border-color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 
 .clients-logos-logo {
@@ -802,7 +796,6 @@ body {
   transition-property: color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 
 /* === footer part two === */
@@ -848,7 +841,6 @@ body {
   transition-property: background-color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 
 .footer-social-icon {
@@ -880,7 +872,6 @@ body {
   transition-property: opacity visibility;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 
 .backdrop.is-hidden {
@@ -912,8 +903,6 @@ body {
   transition-property: transform scale;
   transition-duration: var(--time-transition);
   transition-timing-function: ease-in-out;
-  transition-delay: var(--delay-transition);
-  transition-timing-function: var(--function-transition);
 }
 
 .backdrop.is-hidden .modal {
@@ -971,7 +960,6 @@ body {
   transition-property: background-color color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 .portfolio-filter-item:not(:last-of-type) {
   margin-right: 8px;
@@ -1014,7 +1002,6 @@ body {
   transition-property: box-shadow;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 
 .portfolio-overlay-box {
@@ -1053,7 +1040,6 @@ body {
   transition-property: opacity transform;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
-  transition-delay: var(--delay-transition);
 }
 
 .portfolio-link:hover,
