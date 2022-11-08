@@ -533,7 +533,7 @@ body {
   position: relative;
 }
 
-.work-label-box {
+/* .work-label-box {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -546,17 +546,25 @@ body {
   justify-content: center;
 
   background: rgba(47, 48, 58, 0.8);
-}
+} */
 
 .work-label-text {
-  display: block;
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   line-height: 1.14;
-  text-align: center;
-
+  font-weight: 700;
   text-transform: uppercase;
 
   color: var(--work-label-text);
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* ===== team ===== */
@@ -643,7 +651,7 @@ body {
 
   border-radius: 50%;
 
-  transition-property: background-color color;
+  transition-property: background-color, color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
 }
@@ -709,7 +717,7 @@ body {
   border: 1px solid currentColor;
   border-radius: 4px;
 
-  transition-property: color border-color;
+  transition-property: color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
 }
@@ -721,7 +729,6 @@ body {
 .clients-logos-link:hover,
 .clients-logos-link:focus {
   color: var(--accent-text-color);
-  border: 1px solid var(--accent-text-color);
 }
 
 /* ========== FOOTER ==========*/
@@ -869,7 +876,7 @@ body {
   visibility: visible;
   pointer-events: initial;
 
-  transition-property: opacity visibility;
+  transition-property: opacity, visibility;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
 }
@@ -900,7 +907,7 @@ body {
 
   border-radius: 4px;
 
-  transition-property: transform scale;
+  transition-property: transform, scale;
   transition-duration: var(--time-transition);
   transition-timing-function: ease-in-out;
 }
@@ -957,7 +964,7 @@ body {
 
   padding: 6px 22px;
 
-  transition-property: background-color color;
+  transition-property: background-color, color, box-shadow;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
 }
@@ -1037,7 +1044,7 @@ body {
   transform: translateY(101%);
   opacity: 0;
 
-  transition-property: opacity transform;
+  transition-property: opacity, transform;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
 }
