@@ -888,17 +888,16 @@ body {
 }
 
 .form-input {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-
   display: flex;
   align-items: center;
 
-  color: rgba(255, 255, 255, 0.6);
-
   width: 358px;
   height: 50px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
 
   background-color: transparent;
 
@@ -909,6 +908,10 @@ body {
   padding: 0;
 
   margin-right: 12px;
+
+  transition-property: border-color;
+  transition-duration: var(--time-transition);
+  transition-timing-function: var(--function-transition);
 }
 
 .form-label {
@@ -917,16 +920,26 @@ body {
   top: 50%;
   left: 16px;
 
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
   transform: translate(0, -50%);
 
-  transition-property: color;
+  /* transition-property: color;
   transition-duration: var(--time-transition);
-  transition-timing-function: var(--function-transition);
+  transition-timing-function: var(--function-transition); */
 }
 
 .form-input:hover + .form-label,
-.form-input:hover + .form-label {
-  color: #fff;
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+  transform: translate(0, -50px);
+}
+
+.form-input:hover {
+  border-color: #fff;
 }
 
 /* === button subscribe === */
