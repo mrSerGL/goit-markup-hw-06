@@ -21,9 +21,13 @@ html {
 
   --primary-text-color: #757575;
   --accent-text-color: #2196f3;
+
   --headers-text-color: #212121;
+
   --button-text-color-one: #fff;
+
   --work-label-text: #fff;
+
   --footer-titles-color: #fff;
 
   --portfolio-overlay-text-color: #fff;
@@ -883,11 +887,12 @@ body {
   display: flex;
 }
 
-.form-field-input {
+.footer-form-field-input {
   position: relative;
+  overflow: hidden;
 }
 
-.form-input {
+.footer-form-input {
   display: flex;
   align-items: center;
 
@@ -914,7 +919,7 @@ body {
   transition-timing-function: var(--function-transition);
 }
 
-.form-label {
+.footer-form-label {
   position: absolute;
 
   top: 50%;
@@ -932,17 +937,15 @@ body {
   transition-timing-function: var(--function-transition); */
 }
 
-.form-input:hover + .form-label,
-.form-input:focus + .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
+.footer-form-input:hover + .footer-form-label,
+.footer-form-input:focus + .footer-form-label,
+.footer-form-input:not(:placeholder-shown) + .footer-form-label {
   transform: translate(0, -50px);
 }
 
-.form-input:hover {
+.footer-form-input:hover {
   border-color: #fff;
 }
-
-/* === button subscribe === */
 
 .footer-button-subscribe {
   width: 200px;
@@ -1051,8 +1054,55 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
+}
 
-  /* transform: translate(-8px, 8px); */
+.modal-window-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--headers-text-color);
+
+  padding-top: 40px;
+  margin-bottom: 12px;
+}
+
+.modal-form-inputs {
+  width: 448px;
+  height: 342px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 1px solid blue;
+}
+
+.modal-form-input-name {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 53px;
+}
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+}
+
+.modal-form-label {
+  position: absolute;
+  top: -4px;
+  left: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: #757575;
+
+  /* transform: translateY(-100%); */
 }
 
 /* ================= PORTFOLIO ==================== */
