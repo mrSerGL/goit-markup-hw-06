@@ -1033,6 +1033,8 @@ body {
   transform: translate(-50%, -70%) scaleY(0.1);
 }
 
+/* === button === */
+
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -1056,6 +1058,8 @@ body {
   cursor: pointer;
 }
 
+/* --- inputs --- */
+
 .modal-window-title {
   font-weight: 700;
   font-size: 20px;
@@ -1077,17 +1081,12 @@ body {
   outline: 1px solid blue;
 }
 
-.modal-form-input-name {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  height: 53px;
-}
-
 .modal-form-input {
   width: 100%;
   height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 
 .modal-form-label {
@@ -1101,8 +1100,28 @@ body {
   letter-spacing: 0.01em;
 
   color: #757575;
+}
 
-  /* transform: translateY(-100%); */
+.modal-form-input-name {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 53px;
+  margin-bottom: 28px;
+}
+
+.modal-form-input-tel {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 53px;
+  margin-bottom: 28px;
 }
 
 /* ================= PORTFOLIO ==================== */
