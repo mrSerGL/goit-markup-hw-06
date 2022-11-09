@@ -1102,6 +1102,12 @@ body {
   color: #757575;
 }
 
+.modal-form-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+}
+
 .modal-form-input-name {
   position: relative;
 
@@ -1122,6 +1128,30 @@ body {
 
   height: 53px;
   margin-bottom: 28px;
+}
+
+.modal-form-input-email {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 53px;
+  margin-bottom: 28px;
+}
+
+.modal-form-input-textarea {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 53px;
+
+  /* border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px; */
 }
 
 /* ================= PORTFOLIO ==================== */
