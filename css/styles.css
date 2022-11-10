@@ -400,7 +400,7 @@ body {
 
   color: var(--background-section-one);
 
-  background: var(--button-background-color);
+  background-color: var(--button-background-color);
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1143,6 +1143,15 @@ body {
   background: var(--button-background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: var(--time-transition);
+  transition-timing-function: var(--function-transition);
+}
+
+.form-button:hover,
+.form-button:focus {
+  background: var(--button-hover-color);
 }
 
 .form-checkbox {
