@@ -1092,17 +1092,30 @@ body {
   border-radius: 4px;
 
   margin-bottom: 28px;
+
+  transition-property: border-color, color;
+  transition-duration: var(--time-transition);
+  transition-timing-function: var(--function-transition);
 }
 
-.form-input:hover + .form-label,
-.form-input:focus + .form-label {
-  color: blue;
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-text-color);
+}
+
+.form-input:hover + .form-label {
+  transform: translateY(-2px);
 }
 
 .form-icon {
   position: absolute;
   top: 0;
   left: 12px;
+}
+
+.form-input:hover ~ .form-icon,
+.form-input:focus ~ .form-icon {
+  fill: var(--accent-text-color);
 }
 
 .form-label {
