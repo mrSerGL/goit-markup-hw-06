@@ -1103,7 +1103,8 @@ body {
   border-color: var(--accent-text-color);
 }
 
-.form-input:hover + .form-label {
+.form-input:hover + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
   transform: translateY(-2px);
 }
 
