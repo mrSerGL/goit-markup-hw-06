@@ -1119,16 +1119,16 @@ body {
   transform: translateY(-50%);
 }
 
-/* ==== новій способ не сработал ( возм. разница в исп. label или div как .form-input) === */
+/* ==== новій способ не работает hover === */
 
-/* .form-field:focus-within > .form-icon {
-  fill: var(--accent-text-color);
-}  */
-
-.form-input:hover ~ .form-icon,
-.form-input:focus ~ .form-icon {
+.form-field:focus-within > .form-icon {
   fill: var(--accent-text-color);
 }
+
+/* .form-input:hover ~ .form-icon,
+.form-input:focus ~ .form-icon {
+  fill: var(--accent-text-color);
+} */
 
 .form-label {
   position: absolute;
