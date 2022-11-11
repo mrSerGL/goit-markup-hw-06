@@ -1192,7 +1192,6 @@ body {
 
 .checkbox-icon {
   position: absolute;
-  display: inline-block;
 
   width: 16px;
   height: 15px;
@@ -1208,13 +1207,12 @@ body {
 .checkbox-icon-two {
   position: absolute;
 
+  width: 16px;
+  height: 15px;
+
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-
-  display: inline-block;
-  width: 16px;
-  height: 15px;
 
   border: 2px solid var(--headers-text-color);
   border-radius: 2px;
@@ -1222,6 +1220,13 @@ body {
 
 .form-checkbox:checked + .checkbox-icon {
   background-color: greenyellow;
+}
+
+.form-checkbox:checked + .checkbox-icon-two {
+  background-color: #2196f3;
+  background-image: url(../images/icons.svg#icon-check);
+  background-size: contain;
+  background-origin: content-box;
 }
 
 .checkbox-text {
