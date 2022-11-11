@@ -932,9 +932,7 @@ body {
 
   transform: translate(0, -50%);
 
-  /* transition-property: color;
-  transition-duration: var(--time-transition);
-  transition-timing-function: var(--function-transition); */
+  /* поднимает footer-form-label и не опускает если показывает значение placeholder */
 }
 
 .footer-form-input:hover + .footer-form-label,
@@ -987,7 +985,7 @@ body {
   height: 100%;
 
   background: rgba(0, 0, 0, 0.2);
-  /* backdrop-filter: blur(2px); */
+  /* backdrop-filter: blur(2px);   свойство блюр*/
 
   opacity: 1;
   visibility: visible;
@@ -1010,7 +1008,6 @@ body {
   /* === центровка модального окна ===  */
   top: 50%;
   left: 50%;
-
   transform: translate(-50%, -50%) scaleY(1);
 
   z-index: var(--zind-hero-modal);
@@ -1121,7 +1118,8 @@ body {
 
 /* ==== новій способ не работает hover === */
 
-.form-field:focus-within > .form-icon {
+.form-field:focus-within > .form-icon,
+.form-field:hover-within > .form-icon {
   fill: var(--accent-text-color);
 }
 
@@ -1188,12 +1186,14 @@ body {
   /* === скрыть чек-бокс === */
 
   /*=== №1 appearance: none и вендорные префиксы ===*/
+
   /* -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   position: absolute; */
 
   /* === №2  .visually-hidden ==== */
+
   position: absolute;
   width: 1px;
   height: 1px;
@@ -1209,20 +1209,6 @@ body {
 
 .checkbox-icon {
   position: absolute;
-
-  width: 16px;
-  height: 15px;
-
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-
-  background: #2196f3;
-  border-radius: 2px;
-}
-
-.checkbox-icon-two {
-  position: absolute;
   display: inline-block;
 
   width: 16px;
@@ -1234,13 +1220,13 @@ body {
 
   border: 2px solid var(--headers-text-color);
   border-radius: 2px;
+
+  transition-property: background-color;
+  transition-duration: var(--time-transition);
+  transition-timing-function: var(--function-transition);
 }
 
 .form-checkbox:checked + .checkbox-icon {
-  background-color: greenyellow;
-}
-
-.form-checkbox:checked + .checkbox-icon-two {
   background-color: #2196f3;
   background-image: url(../images/modal/icon-check.svg);
 
