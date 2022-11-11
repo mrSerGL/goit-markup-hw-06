@@ -576,19 +576,38 @@
 
 
 
-              <label class="form-field-comment">
-                <textarea class="form-comment" name="user-comment" rows="6" placeholder="Введіть текст"></textarea>
-                <span class="form-field-label">Коментар</span>
-              </label>
-
-
+          <label class="form-field-comment">
+            <textarea class="form-comment" name="user-comment" rows="6" placeholder="Введіть текст"></textarea>
+            <span class="form-comment-label">Коментар</span>
+          </label>
         </div>
 
+
+
         <div class="form-group-two">
-          <label>
-            <input class="form-checkbox" type="checkbox" name="">
-            <span>Погоджуюся з розсилкою та приймаю <a href="http://">Умови договору</a></span>
-          </label>
+
+
+          <ul class="list">
+            <li class="link">
+              <label class="checkbox-label">
+                <input class="form-checkbox" type="checkbox" name="">
+                <svg class="checkbox-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+                <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="http://">Умови договору</a></span>
+              </label>
+            </li>
+
+            <li  class="link">
+              <label class="checkbox-label">
+                <input class="form-checkbox" type="checkbox" name="">
+                <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a href="http://">Умови договору</a></span>
+              </label>
+            </li>
+          </ul>
+
+
+
           <button class="form-button btn" type="submit">Відправити</button>
         </div>
 
