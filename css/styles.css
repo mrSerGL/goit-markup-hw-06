@@ -1176,6 +1176,8 @@ body {
 
   display: flex;
   justify-content: center;
+
+  margin-bottom: 20px;
 }
 
 .form-checkbox {
@@ -1184,10 +1186,25 @@ body {
   line-height: 1.71;
 
   /* === скрыть чек-бокс === */
-  -webkit-appearance: none;
+
+  /*=== №1 appearance: none и вендорные префиксы ===*/
+  /* -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  position: absolute; */
+
+  /* === №2  .visually-hidden ==== */
   position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  /* ============================ */
 }
 
 .checkbox-icon {
@@ -1206,6 +1223,7 @@ body {
 
 .checkbox-icon-two {
   position: absolute;
+  display: inline-block;
 
   width: 16px;
   height: 15px;
@@ -1224,9 +1242,11 @@ body {
 
 .form-checkbox:checked + .checkbox-icon-two {
   background-color: #2196f3;
-  background-image: url(../images/icons.svg#icon-check);
+  background-image: url(../images/modal/icon-check.svg);
+
   background-size: contain;
-  background-origin: content-box;
+  background-origin: border-box;
+  border-color: #2196f3;
 }
 
 .checkbox-text {
