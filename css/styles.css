@@ -1172,11 +1172,10 @@ body {
 }
 
 .checkbox-label {
+  position: relative;
+
   display: flex;
   justify-content: center;
-
-  position: relative;
-  outline: 1px solid red;
 }
 
 .form-checkbox {
@@ -1193,13 +1192,32 @@ body {
 
 .checkbox-icon {
   position: absolute;
+  display: inline-block;
+
+  width: 16px;
+  height: 15px;
 
   top: 50%;
   left: 0;
-
   transform: translateY(-50%);
-  display: block;
-  background: gray;
+
+  background: #2196f3;
+  border-radius: 2px;
+}
+
+.checkbox-icon-two {
+  position: absolute;
+
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--headers-text-color);
+  border-radius: 2px;
 }
 
 .form-checkbox:checked + .checkbox-icon {
