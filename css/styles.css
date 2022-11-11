@@ -1081,6 +1081,8 @@ body {
 
 .form-field {
   position: relative;
+  display: block;
+  margin-bottom: 28px;
 }
 
 .form-input {
@@ -1088,10 +1090,10 @@ body {
   margin: 0;
   padding: 12px 42px;
 
+  font: inherit;
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-
-  margin-bottom: 28px;
 
   transition-property: border-color, color;
   transition-duration: var(--time-transition);
@@ -1112,8 +1114,9 @@ body {
 
 .form-icon {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 12px;
+  transform: translateY(-50%);
 }
 
 /* ==== новій способ не сработал ( возм. разница в исп. label или div как .form-input) === */
@@ -1129,7 +1132,7 @@ body {
 
 .form-label {
   position: absolute;
-  top: -28px;
+  top: -18px;
   left: 0;
 
   font-weight: 400;
