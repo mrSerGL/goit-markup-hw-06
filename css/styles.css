@@ -911,10 +911,11 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 0;
+  padding-left: 12px;
 
   margin-right: 12px;
 
-  transition-property: border-color;
+  transition-property: border-color background-color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
 }
@@ -935,10 +936,13 @@ body {
   /* поднимает footer-form-label и не опускает если показывает значение placeholder */
 }
 
-.footer-form-input:hover + .footer-form-label,
 .footer-form-input:focus + .footer-form-label,
 .footer-form-input:not(:placeholder-shown) + .footer-form-label {
   transform: translate(0, -50px);
+}
+
+.footer-form-input:hover + .footer-form-label {
+  color: #757575;
 }
 
 .footer-form-input:hover {
@@ -949,6 +953,14 @@ body {
   animation-timing-function: linear;
   /* animation-iteration-count: infinite;
   animation-direction: alternate; */
+
+  background-color: #fff;
+}
+
+.footer-form-input:focus {
+  background-color: #fff;
+  outline: transparent;
+  color: #000000;
 }
 
 .footer-button-subscribe {
@@ -993,7 +1005,7 @@ body {
   }
 
   50% {
-    border-color: #fff;
+    border-color: var(--accent-text-color);
   }
 
   100% {
