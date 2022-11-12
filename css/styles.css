@@ -946,6 +946,11 @@ body {
 }
 
 .footer-button-subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
   width: 200px;
   height: 50px;
 
@@ -996,12 +1001,6 @@ body {
   transition-timing-function: var(--function-transition);
 }
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .modal {
   position: absolute;
 
@@ -1026,6 +1025,12 @@ body {
   transition-property: transform, scale;
   transition-duration: var(--time-transition);
   transition-timing-function: ease-in-out;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
@@ -1055,6 +1060,10 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
+}
+
+.modal-close-btn:hover {
+  fill: #2196f3;
 }
 
 /* --- inputs --- */
