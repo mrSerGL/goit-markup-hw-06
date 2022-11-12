@@ -1037,7 +1037,7 @@ body {
   transform: translate(-50%, -70%) scaleY(0.1);
 }
 
-/* === button === */
+/* === close button === */
 
 .modal-close-btn {
   position: absolute;
@@ -1169,6 +1169,10 @@ body {
   border-radius: 4px;
 
   padding: 12px 16px;
+}
+
+.form-comment:hover {
+  border-color: var(--accent-text-color);
 }
 
 .form-comment-label {
