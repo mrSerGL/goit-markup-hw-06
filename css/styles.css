@@ -942,7 +942,13 @@ body {
 }
 
 .footer-form-input:hover {
-  border-color: #fff;
+  /* border-color: #fff; */
+
+  animation-name: changeBgColor;
+  animation-duration: 250ms;
+  animation-timing-function: linear;
+  /* animation-iteration-count: infinite;
+  animation-direction: alternate; */
 }
 
 .footer-button-subscribe {
@@ -977,6 +983,22 @@ body {
 .footer-button-subscribe:hover,
 .footer-button-subscribe:focus {
   background-color: var(--button-hover-color);
+}
+
+/* === ANIMATION FOOTER === */
+
+@keyframes changeBgColor {
+  0% {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  50% {
+    border-color: #fff;
+  }
+
+  100% {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 /* ===== MODAL WINDOW ===== */
@@ -1022,9 +1044,11 @@ body {
 
   border-radius: 4px;
 
-  transition-property: transform, scale;
+  transition-property: transform scale;
   transition-duration: var(--time-transition);
   transition-timing-function: ease-in-out;
+
+  /* transform-origin: center; */
 }
 
 .backdrop.is-hidden {
@@ -1034,7 +1058,7 @@ body {
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -70%) scaleY(0.1);
+  transform: translate(-50%, -50%) scaleY(0.1);
 }
 
 /* === close button === */
