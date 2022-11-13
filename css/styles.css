@@ -1132,13 +1132,15 @@ body {
 
 .form-input {
   width: 100%;
+  height: 40px;
   margin: 0;
-  padding: 12px 42px;
+  padding: 0;
+  padding-left: 42px;
 
   font: inherit;
 
-  /* font-size: 14px;
-  line-height: 1.71; */
+  font-size: 16px;
+  line-height: 1.71;
 
   color: var(--headers-text-color);
 
@@ -1156,9 +1158,35 @@ body {
 }
 
 /* ============ training ==================== */
+
 .form-input:hover + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
-  transform: translateY(-2px);
+  /* transform: translateY(-2px); */
+
+  animation-name: move;
+  animation-duration: 800ms;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+}
+
+@keyframes move {
+  0% {
+    transform: translatex(0);
+  }
+
+  25% {
+    transform: translatex(54px) translateY(32px) scale(1.3);
+    color: #212121;
+  }
+
+  75% {
+    transform: translatex(54px) translateY(32px) scale(1.3);
+    color: #212121;
+  }
+
+  100% {
+    transform: translatex(0);
+  }
 }
 /* ================================================ */
 
@@ -1176,6 +1204,8 @@ body {
 .form-field:focus-within > .form-icon {
   fill: var(--accent-text-color);
 }
+
+/* === old school === */
 
 /* .form-input:hover ~ .form-icon,
 .form-input:focus ~ .form-icon {
@@ -1201,6 +1231,7 @@ body {
 
 .form-comment {
   width: 100%;
+  height: 120px;
 
   font: inherit;
 
@@ -1238,13 +1269,27 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
+/* === training === */
+
+/* .form-comment:hover .form-comment::placeholder,
+.form-comment:not(:placeholder-shown) .form-comment::placeholder {
+  color: #000000;
+} */
+
+.form-comment:hover::placeholder {
+  color: #000000;
+}
+
+/* ==================== */
+
 .checkbox-label {
   position: relative;
+  height: 24px;
 
   display: flex;
   justify-content: center;
 
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .form-checkbox {
