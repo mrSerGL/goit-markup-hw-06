@@ -1267,6 +1267,9 @@ body {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
+
+  transition-property: color;
+  transition: var(--transition-standart);
 }
 
 /* === training === */
@@ -1277,7 +1280,7 @@ body {
 } */
 
 .form-comment:hover::placeholder {
-  color: #000000;
+  color: var(--headers-text-color);
 }
 
 /* ==================== */
