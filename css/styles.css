@@ -1058,9 +1058,8 @@ body {
 
   border-radius: 4px;
 
-  transition-property: transform scale;
-  transition-duration: var(--time-transition);
-  transition-timing-function: ease-in-out;
+  transition-property: transform, scale;
+  transition: var(--transition-standart), var(--transition-standart);
 
   /* transform-origin: center; */
 }
