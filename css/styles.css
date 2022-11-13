@@ -1146,7 +1146,7 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition-property: border-color, color;
+  transition-property: border-color, color, transform;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
 }
@@ -1274,6 +1274,7 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+
   /* ============================ */
 }
 
@@ -1294,6 +1295,7 @@ body {
   transition-property: background-color;
   transition-duration: var(--time-transition);
   transition-timing-function: var(--function-transition);
+  cursor: pointer;
 }
 
 .form-checkbox:checked + .checkbox-icon {
